@@ -8,7 +8,7 @@ class CodeBreakerTest extends FunSuite {
 
   test("1234 con resultado X") {
     CodeBreaker.secret="1234"
-    val value = "6789"
+    val value = "1789"
     val result = CodeBreaker.codeBreaker(value)
     assert(result == "X")
     val result2 = CodeBreaker.codeBreaker2(value)
